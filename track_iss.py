@@ -16,7 +16,11 @@ from issTrack.issTracking import *
 from PlotMap.MapBasePlot import *
 from PlotMap.PlotlyFig import get_plotly_figure, get_mapbox_token, display_pass_statistics
 
-
+st.set_page_config(
+    page_title="Live ISS Tracker", 
+    page_icon='https://icons.iconarchive.com/icons/goodstuff-no-nonsense/free-space/512/international-space-station-icon.png', 
+    layout='centered', 
+    initial_sidebar_state='auto')
 
 def main():
             
@@ -29,6 +33,8 @@ def main():
         st.markdown(information['tech_spec'], unsafe_allow_html=True)
         st.markdown(information['intro_source'],unsafe_allow_html=True)
 
+        st.sidebar.markdown(information['profile'],unsafe_allow_html=True)
+
         iss = TrackerISS()
         live_show = st.radio("Show live tracking in orthographic",('Yes', 'No'), index=1)
         if live_show == 'Yes':
@@ -39,7 +45,9 @@ def main():
                 earth = BasemapPlot(home_name,home_lat,home_lon)
         while live_show == 'Yes' and home_name_st:
             earth.plot_location(iss.get_speed_iss_pos())
-            time.sleep(5)
+            
+            with st.spinner('Reloading in 5 seconds..'):
+                time.sleep(5)
 
         mapbox_disable,mapbox_access_token = get_mapbox_token(env_var_name='MAPBOX_TOKEN')
         if not mapbox_disable:        

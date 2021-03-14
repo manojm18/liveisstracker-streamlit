@@ -34,6 +34,22 @@ information = {
                             <tr><td>Days occupied</td>				<td>20 years, 3 months, 17 days</td></tr>\
                             <tr><td>No. of orbits</td>				<td>125,964 as of December 2020</td></tr>\
                             <tr><td>Orbital decay</td>				<td>2 km/month</td></tr>\
-                            </table>'''
+                            </table>''',
+        'profile':'''<h3>About me</h3>\
+        <p>Hi ! I'm Manoj Manivannan
+        <ul>
+        <li>Currently located in Modena, Italy</li>
+        <li>A Pythoneer & Data science enthusiast by passion and a data analyst by profession</li>
+        </ul>
+        </p>
+        <p>
+        <h4>My works so far</h4>
+        <ul>
+        <li><a href=\"https://github.com/manojm18\">Github</a></li>
+        <li><a href=\"https://gitlab.com/manojm18\">GitLab</a></li>
+        </ul>
+        </p>
+
+                    '''
 }
                             
