@@ -45,7 +45,7 @@ information = {
         <p>
         <h4>My works so far</h4>
         <ul>
-        <li><a href=\"https://github.com/manojm18\">Github</a></li>
+        <li><a href=\"https://github.com/manojmanivannan\">Github</a></li>
         <li><a href=\"https://gitlab.com/manojm18\">GitLab</a></li>
         </ul>
         </p>
