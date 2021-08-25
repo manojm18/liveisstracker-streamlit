@@ -36,9 +36,9 @@ def main():
         st.sidebar.markdown(information['profile'],unsafe_allow_html=True)
 
         iss = TrackerISS()
-        live_show = st.radio("Show live tracking in orthographic",('Yes', 'No'), index=1)
+        live_show = st.radio("Show live tracking in orthographic",('Yes', 'No'), index=0)
         if live_show == 'Yes':
-            home_name_st = st.text_input('Distance relative to (city)',value='')
+            home_name_st = st.text_input('Distance relative to (city)',value='New York')
             if home_name_st:
                 home_name, home_lat, home_lon = get_city_location(home_name_st)
                 
