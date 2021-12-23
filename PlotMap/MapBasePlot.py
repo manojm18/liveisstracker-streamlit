@@ -63,6 +63,8 @@ class BasemapPlot:
             country = location.raw['address']['country']
         except KeyError:
             country = 'the ocean'
+        except AttributeError:
+            country = 'the ocean'
 
         plt.title('ISS is currently above {} \n \
             Ground distance between {} and ISS is {}km.\n \
