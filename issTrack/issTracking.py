@@ -10,7 +10,7 @@ except ModuleNotFoundError:
 from geopy.geocoders import Nominatim
 from mylogger.iss_logging import logger
 
-geolocator = Nominatim(user_agent="my-application",timeout=3)
+geolocator = Nominatim(user_agent="liveisstracker",timeout=3)
 
 
 def get_city_location(city_name):
