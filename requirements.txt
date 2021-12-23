@@ -4,4 +4,4 @@ pandas
 streamlit
 geopy
 plotly
-https://github.com/matplotlib/basemap/archive/master.zip
+basemap
