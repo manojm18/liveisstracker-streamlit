@@ -1,7 +1,7 @@
-matplotlib
 mysql-connector
-pandas
+numpy
 streamlit
 geopy
 plotly
+basemap-data
 basemap
