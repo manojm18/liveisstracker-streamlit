@@ -1,8 +1,7 @@
-matplotlib==3.1.2
-mysql-connector==2.2.9
-pandas==1.0.4
-streamlit==0.78.0
-geopy==1.20.0
+matplotlib
+mysql-connector
+pandas
+streamlit
+geopy
 plotly
 https://github.com/matplotlib/basemap/archive/master.zip
-
