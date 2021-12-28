@@ -29,9 +29,9 @@ def main():
         st.markdown(information['header1'])
         st.markdown(information['what'])
         st.markdown(information['intro_source'],unsafe_allow_html=True)
-        st.markdown(information['header2'])
-        st.markdown(information['tech_spec'], unsafe_allow_html=True)
-        st.markdown(information['intro_source'],unsafe_allow_html=True)
+#         st.markdown(information['header2'])
+#         st.markdown(information['tech_spec'], unsafe_allow_html=True)
+#         st.markdown(information['intro_source'],unsafe_allow_html=True)
 
         st.sidebar.markdown(information['profile'],unsafe_allow_html=True)
 
