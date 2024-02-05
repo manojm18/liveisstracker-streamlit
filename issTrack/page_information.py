@@ -38,8 +38,8 @@ information = {
         'profile':'''<h3>About me</h3>\
         <p>Hi ! I'm Manoj Manivannan
         <ul>
-        <li>Currently located in Modena, Italy</li>
-        <li>A Pythoneer & Data science enthusiast by passion and a data analyst by profession</li>
+        <li>Currently located in Camberley, United Kingdom</li>
+        <li>A Pythoneer & Data science enthusiast by passion and a Data Analyst Engineer by profession</li>
         </ul>
         </p>
         <p>
