@@ -44,7 +44,7 @@ def main():
                 
                 earth = BasemapPlot(home_name,home_lat,home_lon)
         while live_show == 'Yes' and home_name_st:
-            earth.plot_location(iss.get_speed_iss_pos())
+            earth.plot_location(iss.get_speed_iss_pos(ignore_db_insert=True))
             
             with st.spinner('Reloading in 5 seconds..'):
                 time.sleep(5)
@@ -52,7 +52,7 @@ def main():
         mapbox_disable,mapbox_access_token = get_mapbox_token(env_var_name='MAPBOX_TOKEN')
         if not mapbox_disable:        
             st.write("Current ISS location in flat view")
-            location = iss.get_speed_iss_pos()
+            location = iss.get_speed_iss_pos(ignore_db_insert=True)
             fig = get_plotly_figure(location,token=mapbox_access_token)
 
             if st.button('Refresh'):
